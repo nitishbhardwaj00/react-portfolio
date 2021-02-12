@@ -1,26 +1,19 @@
-import React, { Component } from 'react';
+import React, { usestate } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import Form from './Form'
 import './style.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
+const App = () => {
 
-  render() {
+
+ 
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+     <Form />
+        
       </div>
     );
-  }
+  
 }
 
 render(<App />, document.getElementById('root'));
