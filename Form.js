@@ -28,6 +28,8 @@ const Form = () => {
       <div>{
         allEntry.map((currentItem) => {
           return (
+            <>
+            <h1>Your Input Goes here</h1>
             <div className="details">
              <h4>
              {currentItem.email}
@@ -36,6 +38,7 @@ const Form = () => {
              {currentItem.password}
              </h4>
             </div>
+            </>
           );
         })}
       </div>
