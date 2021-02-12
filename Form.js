@@ -25,11 +25,14 @@ const Form = () => {
         <button type="submit">Submit</button>
       </form>
 
-      <div>{
+      <div>
+       <h1>Your Input Goes here</h1>
+       {
+       
         allEntry.map((currentItem) => {
           return (
             <>
-            <h1>Your Input Goes here</h1>
+            
             <div className="details">
              <h4>
              {currentItem.email}
