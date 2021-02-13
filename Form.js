@@ -13,6 +13,7 @@ const Form = () => {
    }
   return (
     <>
+<h1> Login form using HOOKS</h1>
       <form onSubmit={submit}>
         <label htmlFor="email">Email</label>
           <input type="text" className="email" placeholder="Type your email" value={email} onChange = {(e) => setEmail(e.target.value) }/>
@@ -26,7 +27,7 @@ const Form = () => {
       </form>
 
       <div>
-       <h1>Your Input Goes here</h1>
+       <h2>Your Input Goes here</h2>
        {
        
         allEntry.map((currentItem) => {
